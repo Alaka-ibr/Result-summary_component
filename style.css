@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: hsl(221, 100%, 96%);
+  color: hsl(224, 30%, 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+main {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 700px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Sections */
+section {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Left (results) */
+section:first-of-type {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  text-align: center;
+}
+
+section:first-of-type h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+section:first-of-type div {
+  background: linear-gradient(hsl(256, 72%, 46%), hsl(241, 72%, 46%));
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:first-of-type div p:first-of-type {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+section:first-of-type div p:last-of-type {
+  opacity: 0.7;
+}
+
+section:first-of-type h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section:first-of-type p:last-of-type {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* Right (summary) */
+section:last-of-type h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+/* Just alternating background colors for demo */
+li:nth-child(1) {
+  background: hsl(0, 100%, 95%);
+  color: hsl(0, 100%, 40%);
+}
+
+li:nth-child(2) {
+  background: hsl(39, 100%, 95%);
+  color: hsl(39, 100%, 40%);
+}
+
+li:nth-child(3) {
+  background: hsl(166, 100%, 95%);
+  color: hsl(166, 100%, 30%);
+}
+
+li:nth-child(4) {
+  background: hsl(234, 85%, 95%);
+  color: hsl(234, 85%, 40%);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: hsl(241, 81%, 54%);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    border-radius: 0;
+  }
+}
