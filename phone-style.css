@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Base styling */
+
 body {
   font-family: "Arial", sans-serif;
   background-color: hsl(221, 100%, 96%);
@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
 }
 
-/* Main container */
+
 main {
   background: white;
   display: flex;
@@ -27,13 +27,13 @@ main {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Sections */
+
 section {
   flex: 1;
   padding: 2rem;
 }
 
-/* Left (results) */
+
 section:first-of-type {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   color: white;
@@ -98,7 +98,6 @@ li {
   font-size: 0.95rem;
 }
 
-/* Just alternating background colors for demo */
 li:nth-child(1) {
   background: hsl(0, 100%, 95%);
   color: hsl(0, 100%, 40%);
@@ -119,7 +118,7 @@ li:nth-child(4) {
   color: hsl(234, 85%, 40%);
 }
 
-/* Button */
+
 button {
   width: 100%;
   padding: 1rem;
@@ -136,7 +135,7 @@ button:hover {
   background: hsl(241, 81%, 54%);
 }
 
-/* Responsive */
+
 @media (max-width: 375px) {
   main {
     flex-direction: column;
