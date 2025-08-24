@@ -8,53 +8,72 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
   <title>Frontend Mentor | Results summary component</title>
 
 </head>
 
 <body>
-  <main>
-    
-    <section>
-      <h2>Your Result</h2>
-      <div>
+
+  <section id="main-container">
+
+    <!-- Left Side -->
+    <div class="left">
+      <h4>
+        your result
+      </h4>
+      <div class="circle">
         <p>76</p>
         <p>of 100</p>
       </div>
-      <h3>Great</h3>
-      <p>
+
+      <h3 class="comment">
+        Great
+      </h3>
+      <p class="paragraph">
         You scored higher than 65% of the people who have taken these tests.
       </p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Summary</h2>
+
+    <!-- Right Side -->
+    <div class="right">
+      <h2 class="summary">
+        Summary
+      </h2>
+ 
       <ul>
         <li>
           <span><img src="./assets/images/icon-reaction.svg" alt="">Reaction</span>
-          <strong>80</strong> / 100
+          <strong>80</strong> <span class="yes"> /100</span>
         </li>
         <li>
           <span><img src="./assets/images/icon-memory.svg" alt="">Memory</span>
-          <strong>92</strong> / 100
+          <strong>92</strong><span class="yes"> /100</span>
         </li>
         <li>
           <span><img src="./assets/images/icon-verbal.svg" alt="">Verbal</span>
-          <strong>61</strong> / 100
+          <strong>61</strong> <span class="yes"> /100</span>
         </li>
         <li>
           <span><img src="./assets/images/icon-visual.svg" alt="">Visual</span>
-          <strong>72</strong> / 100
+          <strong>72</strong> <span class="yes"> /100</span>
         </li>
       </ul>
       <button>Continue</button>
-    </section>
-  </main>
+    </div>
 
-    <div class="attribution">
+  </section>
+ 
+  <section class="footer">
+      <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Alaka, Vipzy, Marve</a>.
   </div>
+</div> 
+  </section>
+
 </body>
 
-</html>
