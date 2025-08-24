@@ -222,7 +222,7 @@ span{
     border-radius: 20px;  align-items: center;     background-color: white;
     border: 1px solid black;
  
-    /* overflow: hidden; */
+   
     margin: auto;
     border:0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
